@@ -1,0 +1,251 @@
+{
+	"variables": [],
+	"info": {
+		"name": "bibletrivia",
+		"_postman_id": "21ac088c-b5d6-c7af-9af1-56a1c923e0ae",
+		"description": "Tests for the bibletrivia bot application rest api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://<redacted>/api/v1/questions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;"
+					}
+				}
+			],
+			"request": {
+				"url": "https://<redacted>/api/v1/questions",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "'This is a tester cake that has been updated using PATCH!'",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Test default questions API route.\nShould return all questions."
+			},
+			"response": []
+		},
+		{
+			"name": "https://<redacted>/api/v1/questions/about",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;"
+					}
+				}
+			],
+			"request": {
+				"url": "https://<redacted>/api/v1/questions/about",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "'This is a tester cake that has been updated using PATCH!'",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Test about questions API route.\nShould return about information."
+			},
+			"response": []
+		},
+		{
+			"name": "https://<redacted>/api/v1/questions/find/id=25",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;"
+					}
+				}
+			],
+			"request": {
+				"url": "https://<redacted>/api/v1/questions/find/id=25",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "'This is a tester cake that has been updated using PATCH!'",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Test find questions API route.\nShould return about information pertaining to id 25:\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://<redacted>/api/v1/questions/random",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;"
+					}
+				}
+			],
+			"request": {
+				"url": "https://<redacted>/api/v1/questions/random",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "'This is a tester cake that has been updated using PATCH!'",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Test 'random API route.\nShould return a random entry."
+			},
+			"response": []
+		},
+		{
+			"name": "https://<redacted>/api/v1/questions/about",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;"
+					}
+				}
+			],
+			"request": {
+				"url": "https://<redacted>/api/v1/questions/total",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "'This is a tester cake that has been updated using PATCH!'",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Test for the number of questions available.\nShould return entry count."
+			},
+			"response": []
+		},
+		{
+			"name": "https://<redacted>/api/v1/questions/tag/random/id=189",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;"
+					}
+				}
+			],
+			"request": {
+				"url": "https://<redacted>/api/v1/questions/tag/random/id=189",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "'This is a tester cake that has been updated using PATCH!'",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Test 'random' API route for a given tag ID.\nShould return a random entry."
+			},
+			"response": []
+		},
+		{
+			"name": "https://<redacted>/api/v1/questions/tag/hebrews",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;"
+					}
+				}
+			],
+			"request": {
+				"url": "https://<redacted>/api/v1/questions/tag/hebrews",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "'This is a tester cake that has been updated using PATCH!'",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Test Hebrews questions API route.\nShould return all questions with 'Hebrews' tag.\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://<redacted>/api/v1/questions/tag/find/id=189",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;"
+					}
+				}
+			],
+			"request": {
+				"url": "https://<redacted>/api/v1/questions/tag/find/id=189",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "'This is a tester cake that has been updated using PATCH!'",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Test find by tag ID questions API route.\nShould return all questions with specified ID tag.\n"
+			},
+			"response": []
+		}
+	]
+}

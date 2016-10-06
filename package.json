@@ -1,0 +1,35 @@
+{
+  "name": "bible_trivia_api",
+  "version": "0.1.0",
+  "description": "This bot allows you to test your Bible knowledge.",
+  "main": "server.js",
+  "engines": {
+    "node": "6.x"
+  },
+  "scripts": {
+    "run-test": "nodemon --exec \"npm run test\"",
+    "test-dev": "newman run ./test/test_dev_questions.json",
+    "test-prod": "newman run ./test/test_prod_questions.json",
+    "start": "nf start",
+    "localhost": "node server.js"
+  },
+  "keywords": [
+    "trivia",
+    "bible",
+    "bot",
+    "nodejs"
+  ],
+  "author": "Jeremy Wandui",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "3.x",
+    "express": "4.x",
+    "foreman": "2.0.0",
+    "pg-monitor": "^0.5.11",
+    "pg-promise": "^5.0.3",
+    "underscore": "1.5.2"
+  },
+  "devDependencies": {
+    "newman": "3.x"
+  }
+}
